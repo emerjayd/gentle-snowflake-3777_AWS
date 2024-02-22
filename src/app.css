@@ -1,0 +1,16 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body
+{
+  background-color: black;
+}
+
+.logo
+{
+  position: absolute;
+  top: 0;
+  margin: 1%;
+}
