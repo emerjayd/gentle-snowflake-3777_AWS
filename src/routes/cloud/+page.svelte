@@ -1,7 +1,10 @@
 <script>
 	import Footer from './../../lib/footer.svelte';
+	import { fade } from 'svelte/transition';
+	import TransitionWrapper from '../../lib/TransitionWrapper.svelte';
 </script>
 
+<!-- transition:fade={{ duration: 400 }} -->
 <div class="flex flex-col justify-center items-center text-white text-left w-full px-4">
 	<figure class="w-full max-w-xl mx-auto">
 		<img src="/cloud.png" class="h-auto object-contain rounded-xl" alt="Cloud Services" />

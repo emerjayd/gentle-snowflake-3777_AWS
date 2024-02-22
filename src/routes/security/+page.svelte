@@ -66,5 +66,4 @@
 </div>
 
 <style>
-	/* Page-specific styles here */
 </style>

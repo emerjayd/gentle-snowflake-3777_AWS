@@ -1,10 +1,10 @@
 <script>
-	import { onMount } from 'svelte';
-	onMount(() => {
-		document.title = '>sudo encrypt_';
-	});
+	import { fade } from 'svelte/transition';
+	import TransitionWrapper from '../lib/TransitionWrapper.svelte';
 </script>
 
+<!-- transition:fade={{ duration: 400 }} -->
+<!-- out:fade={{ duration: 300, intro: startTransition, outro: endTransition }} -->
 <div
 	class="flex flex-wrap justify-center max-md:flex-col items-center text-white text-left min-width: 150px; min-height: 150px; width: 100%; height: auto"
 >
@@ -59,3 +59,5 @@
 		<img class="h-auto max-w-xs rounded-lg" src="/cloud.png" alt="Cloud" />
 		<figcaption class="mt-1 text-sm text-left text-white">Cloud services</figcaption>
 	</figure> -->
+<style>
+</style>
