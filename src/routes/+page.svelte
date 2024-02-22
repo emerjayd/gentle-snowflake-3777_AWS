@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	onMount(() => {
-		document.title = 'Page';
+		document.title = '>sudo encrypt_';
 	});
 </script>
 
