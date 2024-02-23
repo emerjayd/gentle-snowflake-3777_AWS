@@ -9,7 +9,7 @@
 	<h1 class="text-center text-3xl font-bold mb-6 text-white">Contact</h1>
 	<form
 		target="_blank"
-		action="https://formsubmit.co/simplelogin.vkund@aleeas.com"
+		action="https://formspree.io/f/xwkgbpnk"
 		method="POST"
 		class="w-full max-w-lg mx-auto bg-white p-6 shadow-md rounded-lg"
 	>

@@ -1,5 +1,13 @@
 /* Write your global styles here, in PostCSS syntax */
 @tailwind base;
+
+*
+{
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary) var(--primary);
+
+}
+
 @tailwind components;
 @tailwind utilities;
 
@@ -36,10 +44,36 @@ body
 body
 {
   animation: fadeIn 0.5s ease-out forwards;
+  overflow-y: auto;
+  scrollbar-gutter: both-edges;
 }
 
 main
 {
   transition: opacity 0.2s ease;
   opacity: var(--opacity);
+}
+
+:root
+{
+  --primary: white;
+  --secondary: gray;
+}
+
+@layer utilities
+{
+
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar
+  {
+    display: none;
+  }
+
+  .no-scrollbar
+  {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
 }

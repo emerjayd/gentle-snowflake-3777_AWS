@@ -28,12 +28,18 @@
 	}
 </script>
 
-<!-- in:fade={{ duration: 400 }} out:fade={{ duration: 400 }} -->
-<main style="--opacity: {opacity}">
-	<div in:fade={{ duration: 400 }} out:fade={{ duration: 400 }} style="--opacity: {opacity}"></div>
-	<Header />
-	<slot />
-</main>
+<div class="no-scrollbar overflow-y-autow-4 scrollbar-hide">
+	<!-- in:fade={{ duration: 400 }} out:fade={{ duration: 400 }} -->
+	<main style="--opacity: {opacity}">
+		<div
+			in:fade={{ duration: 400 }}
+			out:fade={{ duration: 400 }}
+			style="--opacity: {opacity}"
+		></div>
+		<Header />
+		<slot />
+	</main>
+</div>
 
 <!-- <TransitionWrapper>
 	<slot />
