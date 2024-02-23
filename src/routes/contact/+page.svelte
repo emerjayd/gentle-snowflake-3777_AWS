@@ -7,6 +7,10 @@
 
 <div class="container mx-auto px-4 py-8">
 	<h1 class="text-center text-3xl font-bold mb-6 text-white">Contact</h1>
+	<p class="text-center text-white mb-6">
+		Please fill out the form below and I will get back to you as soon as possible. <br />Form will
+		be processed by Formspree.io
+	</p>
 	<form
 		target="_blank"
 		action="https://formspree.io/f/xwkgbpnk"
