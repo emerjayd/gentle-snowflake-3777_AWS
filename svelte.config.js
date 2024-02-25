@@ -1,12 +1,17 @@
-import adapter from '@sveltejs/adapter-cloudflare';
+// svelte.config.js
+import adapter from '@jill64/sveltekit-adapter-aws';
 
-/** @type {import('@sveltejs/kit').Config} */
 const config = {
+	// ...
 	kit: {
-		// adapter-auto only supports some environments, see https://kit.svelte.dev/docs/adapter-auto for a list.
-		// If your environment is not supported or you settled on a specific environment, switch out the adapter.
-		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
-		adapter: adapter()
+		adapter: adapter({
+			name: 'gentle-snowflake-3777_aws',
+			deploy: true,
+			architecture: 'lambda-s3'
+			// ...
+			// Other Adapter Options
+			// ...
+		})
 	}
 };
 

@@ -5,12 +5,13 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
-		"preview": "npm run build && wrangler pages dev .svelte-kit/cloudflare",
+		"preview": "npm run build && wrangler pages dev .svelte-kit/aws",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
-		"deploy": "npm run build && wrangler pages deploy .svelte-kit/cloudflare"
+		"deploy": "npm run build && wrangler pages deploy .svelte-kit/aws"
 	},
 	"devDependencies": {
+		"@jill64/sveltekit-adapter-aws": "^1.3.10",
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/adapter-cloudflare": "^4.1.0",
 		"@sveltejs/kit": "^2.0.0",
@@ -30,7 +31,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@jill64/sveltekit-adapter-aws": "^1.3.10",
 		"amplify-adapter": "^0.1.2",
 		"svelte-routing": "^2.12.0",
 		"tailwind-scrollbar-hide": "^1.1.7"
