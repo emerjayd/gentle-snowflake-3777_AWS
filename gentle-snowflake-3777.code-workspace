@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "../backup"
+		},
+		{
+			"path": "../gentle-snowflake-3777_AWS"
 		}
 	],
 	"settings": {}
