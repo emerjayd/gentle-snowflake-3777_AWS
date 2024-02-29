@@ -5,10 +5,9 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
-		"preview": "npm run build && wrangler pages dev .svelte-kit/aws",
+		"preview": "vite preview",
 		"lint": "prettier --check . && eslint .",
-		"format": "prettier --write .",
-		"deploy": "npm run build && wrangler pages deploy .svelte-kit/aws"
+		"format": "prettier --write ."
 	},
 	"devDependencies": {
 		"@aws-amplify/backend": "^0.12.1",
