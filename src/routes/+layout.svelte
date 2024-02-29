@@ -41,6 +41,9 @@
 	</main>
 </div>
 
+<!-- 
+export const prerender = true; -->
+
 <!-- <TransitionWrapper>
 	<slot />
 </TransitionWrapper> -->

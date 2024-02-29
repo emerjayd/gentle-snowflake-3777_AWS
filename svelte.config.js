@@ -1,18 +1,15 @@
-// svelte.config.js
-import adapter from '@jill64/sveltekit-adapter-aws';
+import adapter from '@sveltejs/adapter-static';
 
-const config = {
-	// ...
+export default {
 	kit: {
 		adapter: adapter({
-			name: 'gentle-snowflake-3777_aws',
-			deploy: true,
-			architecture: 'lambda-s3'
-			// ...
-			// Other Adapter Options
-			// ...
+			// default options are shown. On some platforms
+			// these options are set automatically — see below
+			pages: 'build',
+			assets: 'build',
+			fallback: undefined,
+			precompress: false,
+			strict: true
 		})
 	}
 };
-
-export default config;
